@@ -1,0 +1,162 @@
+@use "sass:math";
+@mixin loader () {
+    .loading {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    @keyframes ldio-1wjzpatfjl7 {
+    0% { transform: rotate(0) }
+    100% { transform: rotate(360deg) }
+    }
+    .ldio-1wjzpatfjl7 div { box-sizing: border-box!important }
+    .ldio-1wjzpatfjl7 > div {
+    position: absolute;
+    width: 142px;
+    height: 142px;
+    top: 29px;
+    left: 29px;
+    border-radius: 50%;
+    border: 14px solid #000;
+    border-color: #7188fe transparent #7188fe transparent;
+    animation: ldio-1wjzpatfjl7 0.6289308176100629s linear infinite;
+    }
+    .ldio-1wjzpatfjl7 > div:nth-child(2) { border-color: transparent }
+    .ldio-1wjzpatfjl7 > div:nth-child(2) div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotate(45deg);
+    }
+    .ldio-1wjzpatfjl7 > div:nth-child(2) div:before, .ldio-1wjzpatfjl7 > div:nth-child(2) div:after { 
+    content: "";
+    display: block;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: -14px;
+    left: 50px;
+    background: #7188fe;
+    border-radius: 50%;
+    box-shadow: 0 128px 0 0 #7188fe;
+    }
+    .ldio-1wjzpatfjl7 > div:nth-child(2) div:after { 
+    left: -14px;
+    top: 50px;
+    box-shadow: 128px 0 0 0 #7188fe;
+    }
+    .loadingio-spinner-dual-ring-bolf0tkuwgl {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+    overflow: hidden;
+    background: none;
+    }
+    .ldio-1wjzpatfjl7 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: translateZ(0) scale(1);
+    backface-visibility: hidden;
+    transform-origin: 0 0; /* see note above */
+    }
+    .ldio-1wjzpatfjl7 div { box-sizing: content-box; }
+}
+@mixin body-basics () {
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+}
+@mixin m-x ($ml, $mr) {
+    margin-left: $ml;
+    margin-right: $mr;
+}
+@mixin m-y ($mt, $mb) {
+    margin-top: $mt;
+    margin-bottom: $mb;
+}
+@mixin p-x ($pl, $pr) {
+    padding-left: $pl;
+    padding-right: $pr;
+}
+@mixin p-y ($pt, $pb) {
+    padding-top: $pt;
+    padding-bottom: $pb;
+}
+@mixin display-type ($mode: flex, $direction: row, $align-hz: center, $align-vt: center) {
+    display: $mode;
+    flex-direction: $direction;
+    justify-content: $align-hz;
+    align-items: $align-vt;
+}
+@mixin fade-in ($delay: 250, $threshold: 20) {
+    animation: fade-in #{$delay}ms;
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+            transform: translateX(-#{$threshold}px);
+        }
+        25% {
+            opacity: 25%;
+            transform: translateX(-#{math.div($threshold, 2)}px);
+        }
+        50% {
+            opacity: 50%;
+            transform: translateX(-#{math.div($threshold, 4)}px);
+        }
+        75% {
+            opacity: 75%;
+            transform: translateX(-#{math.div($threshold, 8)}px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+}
+@mixin fade-out ($delay: 250, $threshold: 20) {
+    animation: fade-out #{$delay}ms;
+    @keyframes fade-out {
+        0% {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        25% {
+            opacity: 75%;
+            transform: translateX(#{$threshold}px);
+        }
+        50% {
+            opacity: 50%;
+            transform: translateX(#{$threshold*2}px);
+        }
+        75% {
+            opacity: 25%;
+            transform: translateX(#{$threshold*4}px);
+        }
+        100% {
+            opacity: 0;
+            transform: translateX(0);
+        }
+    }
+}
+@mixin abs-position ($top, $right, $bottom, $left) {
+    position: absolute; 
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+@mixin fade-in-adv () {
+    @keyframes f-i-a {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    animation: f-i-a 300ms;
+}

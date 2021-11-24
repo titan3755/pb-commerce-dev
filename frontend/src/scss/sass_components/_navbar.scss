@@ -1,0 +1,88 @@
+$link-size: 22px;
+a {
+    text-decoration: none;
+    color: black;
+}
+nav {
+    @include display-type(flex, row, center, center);
+    padding: 12px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    background: white;
+}
+.nav-brand-section {
+    @include display-type(flex, row, flex-start, center);
+    width: 100%;
+    div {
+        font-family: 'Mochiy Pop One', sans-serif;
+        font-size: 30px;
+    }
+}
+.nav-links-section {
+    @include display-type(flex, row, center, center);
+    width: 100%;
+    div {
+        @include display-type(flex, row, center, center);
+        @include m-x(4px, 4px);
+        @include m-y(10px, 0px);
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 20px;
+        a {
+            text-decoration: none;
+        }
+        .nav-link {
+            @include display-type();
+            font-family: 'Maven Pro', sans-serif;
+            font-size: $link-size;
+            background: transparent;
+            border: transparent;
+            border-radius: 25px;
+            padding: 10px;
+            cursor: pointer;
+            width: 80px;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            &:hover {
+                background: rgba(0, 0, 0, 0.1);
+            }
+        }
+    }
+}
+.nav-brand {
+    @include display-type(flex, row, center, center);
+    @include m-x(100px, 0px);
+    @include m-y(0px, 0px);
+}
+.hidden-nav {
+    @keyframes out {
+        from {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        to {
+            opacity: 0;
+            transform: translateY(-100px);
+        }
+    }
+    animation: out 400ms;
+    animation-fill-mode: forwards;
+}
+.navbar {
+    @keyframes in {
+        from {
+            opacity: 0;
+            transform: translateY(-100px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    animation: in 400ms;
+    animation-fill-mode: forwards;
+}

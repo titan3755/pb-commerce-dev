@@ -1,0 +1,27 @@
+@import "./mixins", "./sass_components/mobile", "./sass_components/navbar", "./sass_components/hero", "sass_components/featured", "sass_components/banner", "sass_components/login";
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=Mochiy+Pop+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+* {
+    font-family: Roboto, "Helvetica Neue",;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    &::-webkit-scrollbar {
+        width: 10px;
+        border-radius: 15px; 
+    }
+    &::-webkit-scrollbar-thumb {
+        border-radius: 15px;
+        background-color: grey;
+    }
+}
+
+

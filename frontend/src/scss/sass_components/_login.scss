@@ -1,0 +1,148 @@
+.login-main {
+    @include display-type(flex, row);
+    width: 100%;
+    height: 100vh;
+}
+.login-side {
+    @include display-type(flex, column);
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' %3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(0,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23AE5EFF'/%3E%3Cstop offset='1' stop-color='%23FF2F69'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpattern id='b' width='25' height='25' patternUnits='userSpaceOnUse'%3E%3Ccircle fill='%23ffffff' cx='12.5' cy='12.5' r='12.5'/%3E%3C/pattern%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23b)' fill-opacity='0.05'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-position: center;
+    width: 700px;
+    height: 100%;
+    padding: 20px;
+    color: white;
+}
+.login-brand {
+    @include display-type(flex, row);
+    width: 100%;
+    font-size: 22px;
+    svg {
+        font-size: 35px;
+    }
+    h4 {
+        @include m-y(3px, 0px);
+        text-transform: uppercase;
+    }
+    & > * {
+        @include m-x(5px, 5px);
+    }
+}
+.login-form {
+    @include display-type(flex, column);
+    @include m-y(20px, 20px);
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+}
+.login-input-container {
+    @include display-type(flex, row);
+    input {
+        @include m-x(4px, 0px);
+        border: none;
+        outline: none;
+        height: 20px;
+        width: 250px;
+    }
+}
+.signup-redirect-container {
+    @include display-type(flex, column);
+    height: 100%;
+    width: 100%;
+    div {
+        @include m-y(5px, 5px);
+    }
+}
+.signup-headline {
+    text-align: center;
+    h1 {
+        font-family: 'Varela Round', sans-serif;
+        font-size: 45px;
+    }
+}
+.signup-desc {
+    text-align: center;
+    p {
+        font-family: 'Comfortaa', cursive;
+        font-size: 20px;
+        width: 370px;
+        line-height: 1.8rem;
+    }
+}
+.signup-redirect-btn {
+    button {
+        @include m-y(30px, 0px);
+        background: transparent;
+        color: white;
+        padding: 10px;
+        border-radius: 30px;
+        width: 250px;
+        font-size: 25px;
+        border: white solid 2px;
+        cursor: pointer;
+        transition: 250ms ease-in-out;
+        &:hover {
+            background-color: white;
+            color: black;
+        }
+    }
+}
+.login-inputs {
+    @include display-type(flex, column);
+    @include m-y(40px, 0px);
+}
+.login-headline {
+    @include m-y(0px, 20px);
+    h1 {
+        font-family: 'Varela Round', sans-serif;
+        font-size: 55px;
+        color: rgb(255, 68, 99);
+    }
+}
+.login-desc {
+    p {
+        color: gray;
+        font-size: 18px;
+    }
+}
+.login-input-container {
+    @include m-y(6px, 6px);
+    font-size: 25px;
+    background-color: rgb(235, 235, 235);
+    border-radius: 5px;
+    padding: 14px;
+    svg {
+        @include m-y(0px, 3px);
+    }
+    input {
+        @include m-x(12px, 0px);
+        background-color: rgb(235, 235, 235);
+        width: 350px;
+        font-size: 18px;
+        height: 100%;
+    }
+}
+.login-submit {
+    @include display-type();
+    @include m-y(25px, 25px);
+    button {
+        padding: 10px;
+        width: 180px;
+        background-color: rgb(255, 49, 145);
+        border: none;
+        color: white;
+        border-radius: 30px;
+        font-size: 20px;
+        font-family: 'Maven Pro', sans-serif;
+        cursor: pointer;
+        &:hover {
+            background-color: darken($color: rgb(255, 49, 145), $amount: 6.5);
+        }
+        &:active {
+            box-shadow: 0px 0px 191px -82px rgba(0,0,0,0.75) inset;
+            -webkit-box-shadow: 0px 0px 191px -82px rgba(0,0,0,0.75) inset;
+            -moz-box-shadow: 0px 0px 191px -82px rgba(0,0,0,0.75) inset;
+        }
+    }
+}

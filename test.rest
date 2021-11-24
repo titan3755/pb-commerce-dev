@@ -1,0 +1,16 @@
+POST http://localhost:4500/users/authorization
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYxOTE0ZDJhNDhkNDg5Yzg4ZWNkNDM1ZSIsInVzZXIiOnsiX2lkIjoiNjE5MTRkMmE0OGQ0ODljODhlY2Q0MzVlIiwidXNlcm5hbWUiOiJ0aXRhbiIsInBhc3N3b3JkIjoiJDJiJDEwJEhBc2I0aDR6bW9UMGVIck9qazc5dHVTL1RlQUcvOHIxcno0YUEybDJxT2k3M3lPc2tMcElHIiwiY291bnRyeSI6ImJkIiwiX192IjowfSwiaWF0IjoxNjM2OTQ4OTA0fQ.oUzpasTl0JaqBUCUTzJemRn4mk6ImWlItHsNadQiOVI"
+}
+
+###
+
+POST http://localhost:4500/users/login
+Content-Type: application/json
+
+{
+    "username": "titan",
+    "password": "Amimuhaimin123"
+}

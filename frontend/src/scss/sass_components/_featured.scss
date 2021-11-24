@@ -1,0 +1,26 @@
+.featured-container {
+    @include m-y(40px, 40px);
+    padding: 35px;
+}
+.featured-title {
+    @include m-y(0px, 40px);
+    text-align: center;
+    h4 {
+        @include m-y(0px, 15px);
+        font-size: 30px;
+    }
+    hr {
+        margin: auto;
+        text-align: center;
+        width: 60px;
+        border: 1px black solid;
+        background-color: black;
+    }
+}
+.featured-main {
+    @include display-type();
+    & > * {
+        @include m-x(25px, 25px);
+        @include m-y(15px, 15px);
+    }
+}
