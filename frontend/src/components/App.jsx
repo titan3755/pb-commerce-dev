@@ -37,7 +37,7 @@ const App = (props) => {
             <UserCtx.Provider value={{loginState, setLoginState}}>
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="shop" element={<Shop />} />
+                    <Route path="/shop" element={<Shop />} />
                     <Route path="/privacypolicy" element={<Privacy />} />
                     <Route path="/register" element={<Register />} />
                     <Route path="/login" element={<Login />} /> 
