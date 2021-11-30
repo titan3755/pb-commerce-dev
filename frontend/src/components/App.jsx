@@ -12,7 +12,7 @@ import Logout from './Profiles/Logout'
 
 const App = (props) => {
     const [loginState, setLoginState] = useState(null)
-    const [cartItems, setCartItems] = useState(JSON.parse(localStorage.getItem('cart')))
+    const [cartItems, setCartItems] = useState(JSON.parse(localStorage.getItem('cart')) || [])
     const auth = async () => {
         if (localStorage.getItem('jsonwebtoken')) {
             try {

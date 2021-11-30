@@ -637,7 +637,23 @@ nav {
 }
 
 .register-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   color: white;
+}
+.register-header h2 {
+  margin-top: 8px;
+  margin-bottom: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 25px;
+}
+.register-header svg {
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 35px;
 }
 
 .register-card-main {
@@ -698,6 +714,15 @@ nav {
   margin-bottom: 5px;
   color: #cacaca;
   font-size: 15px;
+}
+
+.register-content {
+  padding: 100px;
+}
+
+.shop-container {
+  margin-top: 300px;
+  margin-bottom: 0px;
 }
 
 * {

@@ -1,6 +1,6 @@
 import React, { useEffect, useContext } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUniversalAccess, faAddressCard } from '@fortawesome/free-solid-svg-icons'
+import { faShoppingBag } from '@fortawesome/free-solid-svg-icons'
 import UserCtx from '../Contexts/User'
 import { registrationCards } from '../../data/iterators'
 import '../../css/style.css'
@@ -25,14 +25,27 @@ const InfoCards = (props) => {
     )
 }
 
+const RegisterForms = (props) => {
+    return (
+        <React.Fragment>
+            <div className="register-forms-header-container">
+
+            </div>
+            <div className="register-forms-main">
+
+            </div>
+            <div className="register-forms-submission">
+                
+            </div>
+        </React.Fragment>
+    )
+}
+
 const RegisterMain = (props) => {
     return (
         <React.Fragment>
             <div className="register-main">
                 <div className="register-side">
-                    <div className="register-header">
-                        <h2>PhotoBytes EShop&trade;</h2>
-                    </div>
                     {
                         registrationCards.map(value => <InfoCards key={value.id} icon={value.icon} info={value} />)
                     }

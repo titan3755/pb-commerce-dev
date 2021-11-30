@@ -15,8 +15,17 @@
     width: 100%;
 }
 .register-header {
+    @include display-type();
     color: white;
-
+    h2 {
+        @include m-y(8px, 0px);
+        @include m-x(10px, 10px);
+        font-size: 25px;
+    }
+    svg {
+        @include m-x(5px, 5px);
+        font-size: 35px;
+    }
 }
 .register-card-main {
     @include display-type();
@@ -61,4 +70,7 @@
         color: rgb(202, 202, 202);
         font-size: 15px;
     }
+}
+.register-content {
+    padding: 100px;
 }
