@@ -1,3 +1,5 @@
+import { faUniversalAccess, faCogs, faShoppingBag } from '@fortawesome/free-solid-svg-icons'
+
 export const images = [
     {
         id: 1, 
@@ -16,5 +18,26 @@ export const images = [
         title: "UI/UX Design",
         desc: "Are you looking for cool and user-friendly UI/UX designs? Our team at PhotoBytes Studios is happy to provide! The UI design plays a major factor in the success and popularity of your product. The UI design makes the users stick around and use your product the most, so a good user experience is crutial, and our UX design team will provide just that.",
         url: 'https://images.pexels.com/photos/9627955/pexels-photo-9627955.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+    }
+]
+
+export const registrationCards = [
+    {
+        id: 1,
+        icon: faUniversalAccess,
+        title: 'Accessibility',
+        desc: 'Mauris vel Donec porta euismod feugiat.Mauris vel Donec porta euismod feugiat.'
+    },
+    {
+        id: 2,
+        icon: faCogs,
+        title: 'Efficiency',
+        desc: 'non tincidunt. Mauris vel fermentum dui, ac ornare mauris. Mauris vel Donec porta euismod feugiat.'
+    },
+    {
+        id: 3,
+        icon: faShoppingBag,
+        title: 'Convenience',
+        desc: 'elit. Sed pretium varius risus non tincidunt. Mauris vel fer Mauris vel Donec porta euismod feugiat.'
     }
 ]

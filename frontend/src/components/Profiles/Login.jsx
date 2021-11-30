@@ -45,7 +45,7 @@ const LoginForm = (props) => {
                     <div className="login-side">
                         <div className="login-brand">
                             <FontAwesomeIcon icon={faStore} />
-                            <h4>PhotoBytes Ecommerce&trade;</h4>
+                            <h4>PhotoBytes EShop&trade;</h4>
                         </div>
                         <div className="signup-redirect-container">
                             <div className="signup-headline">
