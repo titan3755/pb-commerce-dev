@@ -7,7 +7,7 @@ const Hero = (props) => {
     return (
         <React.Fragment>
             <div className="hero-container">
-                <img src="https://images.pexels.com/photos/3490393/pexels-photo-3490393.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="error" className="hero-bgpic" />
+                <img src="https://images.pexels.com/photos/3490393/pexels-photo-3490393.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" className="hero-bgpic" />
                 <div className="hero-main">
                     <div className="hero-header">
                         <h5 className="hero-hd-t">PHOTOBYTES STORE</h5>
